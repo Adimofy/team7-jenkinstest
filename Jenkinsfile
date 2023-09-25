@@ -8,7 +8,7 @@ pipeline{
 		}
 		stage('2-artifactbuild'){
 			steps{
-				sh 'dh -h'
+				sh 'df -h'
 			}
 		}
 		stage('3-unitest'){
