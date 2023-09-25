@@ -16,5 +16,10 @@ pipeline{
 				sh 'lscpu'
 			}
 		}
+        stage('3-unitest'){
+			steps{
+				echo "we are on pipeline as code module"
+			}
+		}
 	}	
 }
