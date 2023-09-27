@@ -21,5 +21,12 @@ pipeline{
 				echo "We are on pipeline as code module"
 			}
 		}
+		stage('5-gitclone'){
+			steps{
+				sh 'whoami'
+				sh 'lsblk'
+				sh 'logname'
+			}
+		}
 	}	
 }
