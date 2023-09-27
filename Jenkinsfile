@@ -21,10 +21,9 @@ pipeline{
 				echo "We are on pipeline as code module"
 			}
 		}
-		stage('5-gitclone'){
+		stage('5-security_check'){
 			steps{
-				sh 'whoami'
-				sh 'lsblk'
+				sh 'bash -x /var/lib/jenkins/workspace/team7-pipeline-demo1/pipeline.sh'
 			}
 		}
 	}	
