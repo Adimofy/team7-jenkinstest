@@ -25,7 +25,6 @@ pipeline{
 			steps{
 				sh 'whoami'
 				sh 'lsblk'
-				sh 'logname'
 			}
 		}
 	}	
