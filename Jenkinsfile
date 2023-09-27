@@ -18,7 +18,7 @@ pipeline{
 		}
         stage('4-deploy'){
 			steps{
-				echo "we are on pipeline as code module"
+				echo "We are on pipeline as code module"
 			}
 		}
 	}	
